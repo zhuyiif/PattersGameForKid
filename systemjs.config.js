@@ -14,7 +14,7 @@
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
-    'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+    'angular2-in-memory-web-api': { main: 'gameindex.js', defaultExtension: 'js' },
   };
   var ngPackageNames = [
     'common',
@@ -30,7 +30,7 @@
   ];
   // Individual files (~300 requests):
   function packIndex(pkgName) {
-    packages['@angular/'+pkgName] = { main: 'index.js', defaultExtension: 'js' };
+    packages['@angular/'+pkgName] = { main: 'gameindex.js', defaultExtension: 'js' };
   }
   // Bundled (~40 requests):
   function packUmd(pkgName) {
